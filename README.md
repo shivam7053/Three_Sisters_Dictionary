@@ -79,4 +79,43 @@ This project is open-source and available for personal and educational use.
 🚀 Happy Coding!
 
 
-This README provides **clear instructions, function descriptions, and example usages** for every ope
+This README provides **clear instructions, function descriptions, and example usages** for everyone.
+
+📥 Step 3: How Users Can Use Your Library
+Users will follow these steps to integrate it into their projects.
+
+1️⃣ Download the Library
+Users can download the library file:
+
+
+wget https://github.com//shivam7053/Three_Sisters_Dictionary/raw/main/lib/libThreeSistersDictionary.a
+
+Or they can clone your repository:
+
+
+git clone https:///shivam7053/Three_Sisters_Dictionary.git
+2️⃣ Include the Header in Their Code
+Users should include your library's header file in their main.cpp:
+
+
+#include "Three_Sisters_Dictionary/include/ThreeSistersDictionary.h"
+
+int main() {
+    ThreeSistersDictionary dict;
+    
+    dict.insert(1, "A large mammal found in Africa", "Elephant");
+    dict.searchById(1);
+    
+    return 0;
+}
+3️⃣ Compile Their Project with the Library
+Users should link the static library during compilation:
+
+g++ main.cpp -IThree_Sisters_Dictionary/include -LThree_Sisters_Dictionary/lib -lThreeSistersDictionary -o my_project
+If libThreeSistersDictionary.a is in the current directory:
+
+
+g++ main.cpp -IThree_Sisters_Dictionary/include -L. -lThreeSistersDictionary -o my_project
+4️⃣ Run the Program
+
+./my_project

@@ -249,5 +249,12 @@ int main() {
     cout << "\nDisplaying all:\n";
     dict.displayAll();
 
+    cout << "\nDelete id:1 \n";
+    dict.remove(1);
+
+    cout << "\nDisplaying all:\n";
+    dict.displayAll();
+
+
     return 0;
 }
